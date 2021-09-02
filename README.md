@@ -20,7 +20,7 @@
 - 系统 Windows 10 1803 / Windows 10 21H1 / MacOS Catalina / MacOS Big Sur
 - 游览器版本 Chrome92+ / Chromium92+(all-codec+) / Safari(Intel) / Safari(M1) / Edge92+ / Edge(Old)42(EdgeHTML 17.17134) / Firefoxf91 / IE11
 - 编码环境 Windows10 均未安装HEVC 所以暂时无法验证CPU硬解 原因: 收费
-![image](https://user-images.githubusercontent.com/12267648/131771189-7c12ccc5-a2de-44af-90bb-a94d97212e20.png)
+![image](https://user-images.githubusercontent.com/12267648/131796896-e1745072-34e3-4c8b-a50d-62699a7b69a5.png)
 - Windows 采用显卡硬解 MacOS 采用CPU硬解
 
 ## 测试用例:
@@ -52,7 +52,7 @@ video/webm; codecs="vp9"
 ## 其他结论:
 1. Windows在硬件支持的情况下使用Edge(Old)可以使用实现H.265/hev1流畅播放
 2. MSE本身游览器支持度很高并且是硬件解码, 所以对硬件设备有要求:
-![image](https://user-images.githubusercontent.com/12267648/131771329-c9e99e59-57e4-4dd8-8898-2f576a31724a.png)
+![image](https://user-images.githubusercontent.com/12267648/131797013-c83be538-bfb4-4825-9636-3f288612a7da.png)
 3. CPU(Intel Core 7代及其以上/AMD 不详) | GPU [这里](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new)
 4. MSE支持的Box格式为FMP4和Webm
 5. MSE受限游览器提供的编解码库(对 FMP4/H.265/hvc1 支持都很差)
