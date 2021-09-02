@@ -28,7 +28,7 @@
 2. 标准 MP4/H.264/avc1 视频 24 分钟
 
 ## 测试方法:
-1. 将视频1分别转码为FMP4(H.265/hev1 H.264/avc1) Webm(VP8 VP9) 使用MSE播放指定编解码播放
+1. 将视频1分别转码为FMP4(H.265/hev1 H.265/hvc1 H.264/avc1) Webm(VP8 VP9) 使用MSE播放指定编解码播放
 2. 将视频2分别转码为FMP4(H.265/hev1 H.264/avc1) Webm(VP8 VP9) 使用MSE播放指定编解码播放
 3. MSE设置的编解码有:
 ```
