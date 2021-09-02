@@ -3,7 +3,7 @@
 | Codec\Browser      | Chrome | Chromium | Safari(Intel) | Safari(M1) | Edge | Edge(Old) | Firefox | IE |
 | ------------------ | ------ | -------- | ------------- | ---------- | ---- | --------- | ------- | -- |
 | FMP4/H.265/hev1    | No     | No       | Yes           | Yes        | No   | Yes       | No      | No |
-| FMP4/H.265/hvc1    | No     | No       | No            | No         | No   | Yes       | No      | No |
+| FMP4/H.265/hvc1    | No     | No       | No            | No         | No   | No        | No      | No |
 | MP4/H.264/avc1     | Yes    | Yes      | Yes           | Yes        | Yes  | Yes       | No      | Yes |
 | Webm/VP8           | Yes    | Yes      | No            | No         | Yes  | Yes       | Yes     | No |
 | Webm/VP9           | Yes    | Yes      | No            | No         | Yes  | Yes       | No      | No |
@@ -46,6 +46,8 @@ video/webm; codecs="vp9"
  > 视频不是FMP4/Webm
  >> 无法支持视频本身的编解码
  >>> 无法播放没有音频流的视频
+3. Safari(Intel) Edge(Old) 播放 FMP4/H.265/hvc1 码流时, 只能部分解码显示1/3画面. 
+4. Safari(M1) 播放 FMP4/H.265/hvc1 码流时, 只能加载视频时长画面都无法显示.
 
 ## 其他结论:
 1. Windows在硬件支持的情况下使用Edge(Old)可以使用实现H.265/hev1流畅播放
