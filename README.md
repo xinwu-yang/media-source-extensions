@@ -17,14 +17,14 @@
 - Lenovo 暗夜精灵 i5-7300HQ / GTX-1050Ti
 
 ## 测试环境:
-- 系统 Windows 10 1803 / MacOS Catalina / MacOS Big Sur
+- 系统 Windows 10 1803 / Windows 10 21H1 / MacOS Catalina / MacOS Big Sur
 - 游览器版本 Chrome92+ / Chromium92+(all-codec+) / Safari(Intel) / Safari(M1) / Edge92+ / Edge(Old)42(EdgeHTML 17.17134) / Firefoxf91 / IE11
 - 编码环境 Windows10 均未安装HEVC 所以暂时无法验证CPU硬解 原因: 收费
 ![image](https://user-images.githubusercontent.com/12267648/131771189-7c12ccc5-a2de-44af-90bb-a94d97212e20.png)
 - Windows 采用显卡硬解 MacOS 采用CPU硬解
 
 ## 测试用例:
-1. 监控摄像头拍摄 MP4/H.265/hvc1 的视频 5分钟
+1. 监控摄像头拍摄 MP4/H.265/hvc1 的视频 5分钟 (无音频)
 2. 标准 MP4/H.264/avc1 视频 24 分钟
 
 ## 测试方法:
