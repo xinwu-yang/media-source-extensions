@@ -41,11 +41,11 @@ video/webm; codecs="vp9"
  
 ## 测试中遇到的错误:
 1. DOMException: The quota has been exceeded. 
- > Firefox报错无法播放avc视频
+ > Firefox报错无法播放 FMP4/H.264/avc1 视频
 2. DOMException: Failed to execute 'endOfStream' on 'MediaSource': The MediaSource's readyState is not 'open'
  > 视频不是FMP4/Webm
  >> 无法支持视频本身的编解码
- >>> 无法播放没有音频流的视频
+ >>> 无法播放没有音频流的 FMP4/H.264/avc1 视频
 3. Safari(Intel) Edge(Old) 播放 FMP4/H.265/hvc1 码流时, 只能部分解码显示1/3画面. 
 4. Safari(M1) 播放 FMP4/H.265/hvc1 码流时, 只能加载视频时长画面都无法显示.
 
