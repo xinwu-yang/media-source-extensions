@@ -42,7 +42,7 @@ video/webm; codecs="vp9"
 ## 测试中遇到的错误:
 1. DOMException: The quota has been exceeded. 
  > Firefox报错无法播放avc视频
-3. DOMException: Failed to execute 'endOfStream' on 'MediaSource': The MediaSource's readyState is not 'open'
+2. DOMException: Failed to execute 'endOfStream' on 'MediaSource': The MediaSource's readyState is not 'open'
  > 视频不是FMP4/Webm
  >> 无法支持视频本身的编解码
  >>> 无法播放没有音频流的视频
@@ -61,4 +61,9 @@ video/webm; codecs="vp9"
 ## 其他H.265播放器方案:
 1. 1.WebAssembly + Canvas 播放器: 使用ffmpeg.js软解, 客户端性能要求高, 技术门槛高, 兼容性很好. (能正常播放MP4/H.265/hvc1视频)
 2. 视频转码到 VP9(libvpx-vp9) 压缩率更高/画质不变/Chrome兼容度高/开源免费.
-3. 视频转码到 H.264/avc1(libx264) : 转码消耗方面视频码率越大转码速度越慢, 可考虑降低视频码率/分辨率等方式进行转码, 将码率控制在 300-600k / CRF 29-30 既能保证画质也能保证转码效率.
+3. 视频转码到 H.264/avc1(libx264) : 转码消耗方面视频码率越大转码速度越慢, 可考虑降低视频码率/分辨率等方式进行转码, 既能保证画质也能保证转码效率.
+4. 举例:
+```
+# 1080P to 720P / hvc1 to avc1 / yuvj420p to yuv420p / bitrate 2164k to 311k / CPU R7-5800H 8C16T / Speed 12.5x
+ffmpeg.exe -i .\test.mp4 -threads 16 -preset ultrafast -vf scale=1280:720 -b:v 300k -c:v libx264 -pix_fmt yuv420p -hide_banner test-720-avc-300k-yuv420p.mp4
+```
