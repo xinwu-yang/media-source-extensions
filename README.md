@@ -1,4 +1,4 @@
-# 调研游览器对MSE(Media Source Extensions)兼容情况
+# 调研游览器对 MSE(Media Source Extensions) 兼容情况
 ## 结论:
 | Codec\Browser      | Chrome | Chromium | Safari(Intel) | Safari(M1) | Edge | Edge(Old) | Firefox | IE |
 | ------------------ | ------ | -------- | ------------- | ---------- | ---- | --------- | ------- | -- |
