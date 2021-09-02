@@ -4,7 +4,7 @@
 | ------------------ | ------ | -------- | ------------- | ---------- | ---- | --------- | ------- | -- |
 | FMP4/H.265/hev1    | No     | No       | Yes           | Yes        | No   | Yes       | No      | No |
 | FMP4/H.265/hvc1    | No     | No       | No            | No         | No   | No        | No      | No |
-| MP4/H.264/avc1     | Yes    | Yes      | Yes           | Yes        | Yes  | Yes       | No      | Yes |
+| FMP4/H.264/avc1    | Yes    | Yes      | Yes           | Yes        | Yes  | Yes       | No      | Yes |
 | Webm/VP8           | Yes    | Yes      | No            | No         | Yes  | Yes       | Yes     | No |
 | Webm/VP9           | Yes    | Yes      | No            | No         | Yes  | Yes       | No      | No |
 
@@ -58,7 +58,7 @@ video/webm; codecs="vp9"
 5. MSE受限游览器提供的编解码库(对 FMP4/H.265/hvc1 支持都很差)
 6. 在Safari游览器下, MSE 对 FMP4/H.265/hev1 不受限硬件(5代i5和9代i7均可流畅播放)
 7. MSE 测试到视频1在没有音频流的情况下 FMP4/H.264/avc1 也无法播放
-8. MP4/H.265/hev1 不是免费的 MP4/H.265/hvc1 是开源免费的(压缩比,普及率较 MP4/H.265/hev1 低)
+8. H.265/hev1 不是免费的(Apple Support), H.265/hvc1 是开源免费的(压缩比,普及率较 MP4/H.265/hev1 低)
 9. Chromium 后面预计普及的最优编解码为AV1 这是开源免费的 [这里](https://chromium.woolyss.com/#html5-audio-video)
 
 ## 其他H.265播放器方案:
