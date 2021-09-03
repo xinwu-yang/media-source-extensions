@@ -48,6 +48,7 @@ video/webm; codecs="vp9"
  >>> 无法播放没有音频流的 FMP4/H.264/avc1 视频
 3. Safari(Intel) Edge(Old) 播放 FMP4/H.265/hvc1 码流时, 只能部分解码显示1/3画面. 
 4. Safari(M1) 播放 FMP4/H.265/hvc1 码流时, 只能加载视频时长画面都无法显示.
+5. FMP4和Webm在所有游览器下都无法直接分片加载播放, 预计是需要自行编码加载播放.
 
 ## 其他结论:
 1. Windows在硬件支持的情况下使用Edge(Old)可以使用实现H.265/hev1流畅播放
