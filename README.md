@@ -60,10 +60,10 @@ video/webm; codecs="vp9"
 6. 在Safari游览器下, MSE 对 FMP4/H.265/hev1 不受限硬件(5代i5和9代i7均可流畅播放)
 7. MSE 测试到视频1在没有音频流的情况下 FMP4/H.264/avc1 也无法播放
 8. H.265/hev1 不是免费的(Apple Support), H.265/hvc1 是开源免费的(压缩比,普及率较 MP4/H.265/hev1 低)
-9. Chromium 后面预计普及的最优编解码为AV1 这是开源免费的 [这里](https://chromium.woolyss.com/#html5-audio-video)
+9. Chromium 后面预计普及的最优编解码为AV1(libaom-av1) 这是开源免费的 [这里](https://chromium.woolyss.com/#html5-audio-video)
 
 ## 其他H.265播放器方案:
-1. 1.WebAssembly + Canvas 播放器: 使用ffmpeg.js软解, 客户端性能要求高, 技术门槛高, 兼容性很好. (能正常播放MP4/H.265/hvc1视频)
+1. 1.WebAssembly + Canvas 播放器: 使用ffmpeg.js软解, 卡顿明显, 解码性能差, 技术门槛高, 兼容性很好. (能正常播放MP4/H.265/hvc1视频)
 2. 视频转码到 VP9(libvpx-vp9) 压缩率更高/画质不变/Chrome兼容度高/开源免费.
 3. 视频转码到 H.264/avc1(libx264) : 转码消耗方面视频码率越大转码速度越慢, 可考虑降低视频码率/分辨率/提升CRF等方式进行转码, 既能保证画质也能保证转码效率.
 4. 游览器直接软解: Chromium92+(all-codec+) 集成了h.265解码器, 使用iframe嵌套方式可以直接播放, 支持hvc1和hev1
