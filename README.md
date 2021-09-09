@@ -54,12 +54,12 @@ video/webm; codecs="vp9"
 1. Windows在硬件支持的情况下使用Edge(Old)可以使用实现H.265/hev1流畅播放
 2. MSE本身游览器支持度很高并且是硬件解码, 所以对硬件设备有要求:
 ![image](https://user-images.githubusercontent.com/12267648/131797013-c83be538-bfb4-4825-9636-3f288612a7da.png)
-3. CPU(Intel Core 7代及其以上/AMD 不详) | GPU [这里](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new)
+3. CPU(Intel Core 7代及其以上 / AMD 不详) | GPU [这里](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new)
 4. MSE支持的Box格式为FMP4和Webm
 5. MSE受限游览器提供的编解码库(对 FMP4/H.265/hvc1 支持都很差)
 6. 在Safari游览器下, MSE 对 FMP4/H.265/hev1 不受限硬件(5代i5和9代i7均可流畅播放)
 7. MSE 测试到视频1在没有音频流的情况下 FMP4/H.264/avc1 也无法播放
-8. H.265/hev1 不是免费的(Apple Support), H.265/hvc1 是开源免费的(压缩比,普及率较 MP4/H.265/hev1 低)
+8. H.265/hev1 不是免费的(Apple Support), H.265/hvc1 是开源免费的(压缩比,普及率较 H.265/hev1 低)
 9. Chromium 后面预计普及的最优编解码为AV1(libaom-av1) 这是开源免费的 [这里](https://chromium.woolyss.com/#html5-audio-video)
 
 ## 其他H.265播放器方案:
@@ -78,7 +78,6 @@ ffmpeg.exe -i .\test.mp4 -threads 16 -preset ultrafast -vf scale=1280:720 -b:v 3
 
 ### 使用iframe嵌套播放(Chromium92+(all-codec+))
 ```html
-<iframe id="Example2" title="Example2" width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://25.30.9.23/testh265/3333_265.mp4">
-</iframe>
+<iframe id="Example2" title="Example2" width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://25.30.9.23/testh265/3333_265.mp4"></iframe>
 ```
 
