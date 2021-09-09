@@ -18,7 +18,7 @@
 
 ## 测试环境:
 - 系统 Windows 10 1803 / Windows 10 21H1 / MacOS Catalina / MacOS Big Sur
-- 游览器版本 Chrome92+ / Chromium92+(all-codec+) / Safari(Intel) / Safari(M1) / Edge92+ / Edge(Old)42(EdgeHTML 17.17134) / Firefoxf91 / IE11
+- 游览器版本 Chrome92+ / Chromium92+(all-codec+)[下载](https://chromium.woolyss.com) / Safari(Intel) / Safari(M1) / Edge92+ / Edge(Old)42(EdgeHTML 17.17134) / Firefoxf91 / IE11
 - 编码环境 Windows10 均未安装HEVC 所以暂时无法验证CPU硬解 原因: 收费
 ![image](https://user-images.githubusercontent.com/12267648/131796896-e1745072-34e3-4c8b-a50d-62699a7b69a5.png)
 - Windows 采用显卡硬解 MacOS 采用CPU硬解
