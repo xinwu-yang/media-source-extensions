@@ -63,7 +63,7 @@ video/webm; codecs="vp9"
 9. Chromium 后面预计普及的最优编解码为AV1(libaom-av1) 这是开源免费的 [这里](https://chromium.woolyss.com/#html5-audio-video)
 
 ## 其他H.265播放器方案:
-1. 1.WebAssembly + Canvas 播放器: 使用ffmpeg.js软解, 卡顿明显, 解码性能差, 技术门槛高, 兼容性很好. (能正常播放MP4/H.265/hvc1视频)
+1. 1.WebAssembly + Canvas 播放器: 使用ffmpeg.js软解, 卡顿明显, 解码性能差, 技术门槛高, 兼容性很好. (能正常播放H.265/hvc1视频)
 2. 视频转码到 VP9(libvpx-vp9) 压缩率更高/画质不变/Chrome兼容度高/开源免费.
 3. 视频转码到 H.264/avc1(libx264) : 转码消耗方面视频码率越大转码速度越慢, 可考虑降低视频码率/分辨率/提升CRF等方式进行转码, 既能保证画质也能保证转码效率.
 4. 游览器直接软解: Chromium92+(all-codec+) 集成了h.265解码器, 使用iframe嵌套方式可以直接播放, 支持hvc1和hev1
